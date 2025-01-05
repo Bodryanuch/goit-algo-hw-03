@@ -14,7 +14,7 @@ def get_numbers_ticket(min, max, quantity):  # функція на генера�
         pass
 
     # Якщо кількість елементів унікального списку задана невірно повернути поржній список
-    elif quantity >= max - min or quantity <= 0:
+    elif quantity > max - min or quantity <= 0:
         pass
 
     else:
@@ -27,4 +27,4 @@ def get_numbers_ticket(min, max, quantity):  # функція на генера�
     return win_number     # Повернути список з функції
 
 
-print(get_numbers_ticket(0, 100, 6))
+print(get_numbers_ticket(10, 15, 5))

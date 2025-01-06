@@ -24,7 +24,7 @@ def get_numbers_ticket(min, max, quantity):  # функція на генера�
             if win_number.count(number) == 0:   # Якщо згенерованого числа ще не має в списку то додати його
                 win_number.append(number)
 
-    return win_number     # Повернути список з функції
+    return sorted(win_number)     # Повернути список з функції
 
 
 print(get_numbers_ticket(10, 15, 5))
